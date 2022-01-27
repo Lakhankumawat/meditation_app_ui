@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:glassmorphism/glassmorphism.dart';
 import 'package:meditation_app/config/size_config.dart';
+import 'package:meditation_app/src/screens/splash_screen/components/customButton.dart';
 
-Widget PageCard() {
+Widget PageCard(
+    {required int index, required String headline, required String subline}) {
   return GlassmorphicContainer(
-    width: 350,
-    height: 345,
-    borderRadius: 20,
+    width: getProportionateScreenWidth(280),
+    height: getProportionateScreenHeight(240),
+    borderRadius: 30,
     blur: 20,
     alignment: Alignment.bottomCenter,
     border: 2,
@@ -33,12 +35,12 @@ Widget PageCard() {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(30),
       ),
-      padding: EdgeInsets.symmetric(horizontal: 30, vertical: 30),
+      padding: EdgeInsets.symmetric(horizontal: 30, vertical: 15),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            '30 days\nMeditation\nChallenge',
+            headline,
             textAlign: TextAlign.left,
             style: TextStyle(
                 color: Color.fromRGBO(255, 255, 255, 1),
@@ -50,7 +52,7 @@ Widget PageCard() {
           ),
           SizedBox(height: 16),
           Text(
-            'Practice your breathing, relax your body, listen the calming sound music make you feel better.',
+            subline,
             textAlign: TextAlign.left,
             style: TextStyle(
                 color: Color.fromRGBO(235, 235, 245, 0.60),
@@ -61,61 +63,63 @@ Widget PageCard() {
                 height: 1.3),
           ),
           SizedBox(
-            height: getProportionateScreenHeight(10),
+            height: getProportionateScreenHeight(15),
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text(
-                'Skip',
-                textAlign: TextAlign.left,
-                style: TextStyle(
-                    color: Color.fromRGBO(235, 235, 245, 0.6),
-                    fontFamily: 'SF Pro Text',
-                    fontSize: 17,
-                    letterSpacing: -0.4,
-                    fontWeight: FontWeight.normal,
-                    height: 1.3),
-              ),
-              Container(
-                width: 85,
-                height: 50,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(
-                    20,
-                  ),
-                  boxShadow: [
-                    BoxShadow(
-                        color: Color.fromRGBO(0, 0, 0, 0.5),
-                        offset: Offset(0, 10),
-                        blurRadius: 20)
+          index != 2
+              ? Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      'Skip',
+                      textAlign: TextAlign.left,
+                      style: TextStyle(
+                          color: Color.fromRGBO(235, 235, 245, 0.6),
+                          fontFamily: 'SF Pro Text',
+                          fontSize: 18,
+                          letterSpacing: -0.4,
+                          fontWeight: FontWeight.normal,
+                          height: 1.3),
+                    ),
+                    Container(
+                      width: 85,
+                      height: 50,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(
+                          20,
+                        ),
+                        boxShadow: [
+                          BoxShadow(
+                              color: Color.fromRGBO(0, 0, 0, 0.5),
+                              offset: Offset(0, 10),
+                              blurRadius: 20)
+                        ],
+                        gradient: LinearGradient(
+                            begin: Alignment(6.123234262925839e-17, 1),
+                            end: Alignment(-1, 6.123234262925839e-17),
+                            colors: [
+                              Color.fromRGBO(255, 255, 255, 0.9),
+                              Color.fromRGBO(255, 255, 255, 0.6)
+                            ]),
+                      ),
+                      child: Center(
+                        child: Text(
+                          'Next',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              color: Color.fromRGBO(0, 0, 0, 1),
+                              fontFamily: 'SF Pro Text',
+                              fontSize: 17,
+                              letterSpacing: -0.4,
+                              fontWeight: FontWeight.w700,
+                              height: 1.3),
+                        ),
+                      ),
+                    )
                   ],
-                  gradient: LinearGradient(
-                      begin: Alignment(6.123234262925839e-17, 1),
-                      end: Alignment(-1, 6.123234262925839e-17),
-                      colors: [
-                        Color.fromRGBO(255, 255, 255, 0.9),
-                        Color.fromRGBO(255, 255, 255, 0.6)
-                      ]),
-                ),
-                child: Center(
-                  child: Text(
-                    'Next',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                        color: Color.fromRGBO(0, 0, 0, 1),
-                        fontFamily: 'SF Pro Text',
-                        fontSize: 17,
-                        letterSpacing: -0.4,
-                        fontWeight: FontWeight.w700,
-                        height: 1.3),
-                  ),
-                ),
-              )
-            ],
-          ),
+                )
+              : CustomButton(),
           SizedBox(
-            height: getProportionateScreenHeight(7),
+            height: getProportionateScreenHeight(15),
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -125,7 +129,8 @@ Widget PageCard() {
                 width: 8,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(50),
-                  color: Colors.white,
+                  color:
+                      index == 0 ? Colors.white : Colors.white.withOpacity(0.2),
                 ),
               ),
               SizedBox(
@@ -136,7 +141,8 @@ Widget PageCard() {
                 width: 8,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(50),
-                  color: Colors.white.withOpacity(0.2),
+                  color:
+                      index == 1 ? Colors.white : Colors.white.withOpacity(0.2),
                 ),
               ),
               SizedBox(
@@ -147,7 +153,8 @@ Widget PageCard() {
                 width: 8,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(50),
-                  color: Colors.white.withOpacity(0.2),
+                  color:
+                      index == 2 ? Colors.white : Colors.white.withOpacity(0.2),
                 ),
               ),
             ],
