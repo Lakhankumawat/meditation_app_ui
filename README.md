@@ -1,12 +1,12 @@
 
   
-<h1 align="center"> Ⓜ️EDIT8</h1>
+# Ⓜ️EDIT8
 
-<h3 align="center">🧘‍♂️A meditation app built using flutter .</h3>
+### 🧘‍♂️A meditation app built using flutter .
 
 <!------------------Swags------------------------->
 
-<p align="center">
+<p align="left">
 
 <img src="https://forthebadge.com/images/badges/built-with-love.svg" alt=" forks"/>
 <img src="https://forthebadge.com/images/badges/built-by-codebabes.svg" alt=" forks"/>
@@ -19,23 +19,19 @@
 
 
 
-<h2 align="center">🙂Note from dev </h2>
-  <h6 align="center">
- More screens and styles coming soon stay tuned ...<br>
-New suggestions have a warm welcome from our side
-  
-</h6>
+## 🙂Note from dev
 
-<h2 align="center">😎Features </h2>
-<h5 align="center" >
- 
+More screens and styles coming soon stay tuned ...<br>
+New suggestions have a warm welcome from our side
+
+## 😎Features 
+
   Cool Eye Catching UI  <br>
   GlassMorphism Style Enabled<br>
   Device Resoultion Responsive<br>
   Organised Code File Structure<br>
   Beginner Friendly Code with Comments<br>
-   
-  </h5>
+
 
 
 
@@ -47,7 +43,9 @@ New suggestions have a warm welcome from our side
 <a href="https://www.figma.com/@sourany">
 <img src="https://user-images.githubusercontent.com/55774240/151218487-af60c20f-29eb-4ba9-8839-8cd165051b5e.png"></a>
 
-
+## 🙇‍♂️ Credits
+- [Sourany : Design ](https://www.figma.com/@sourany)
+- [Giuseppe Fasino : Icons ](https://www.figma.com/community/file/1060976882810853937)
 
 
 <hr>
