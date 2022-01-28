@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:meditation_app/provider/getit.dart';
 import 'package:meditation_app/routes/routes.dart';
 import 'package:meditation_app/service/navigation_service.dart';
+import 'package:meditation_app/src/screens/home_screen/home_screen.dart';
 import 'package:meditation_app/src/screens/splash_screen/splash_screen.dart';
 
 void main() {
@@ -37,7 +38,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
       routes: routes,
-      initialRoute: SplashScreen.routeName,
+      initialRoute: HomeScreen.routeName,
     );
   }
 }

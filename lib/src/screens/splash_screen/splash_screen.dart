@@ -12,10 +12,14 @@ class SplashScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     SizeConfig().init(context);
     return BaseView<SplashScreenViewModel>(
-        onModelReady: (model) => {},
+        onModelReady: (model) => {
+              model.animateSlider(1, context),
+            },
         builder: (context, model, child) {
           return Scaffold(
-            body: Body(),
+            body: Body(
+              model: model,
+            ),
           );
         });
   }
