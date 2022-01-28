@@ -15,20 +15,17 @@
 
 </p>
 <!------------------------------------Badges------------------------------->
-<p align="center">
-<img align="center" src="https://img.icons8.com/office/48/000000/under-construction.png"/></p>
-<h1 align="center">
-Repo Under Construction
-</h1>
 
-<h6 align="center">
+
+
+
+<h2 align="center">🙂 Note from dev </h2>
+  <h6 align="center">
+ More screens and styles coming soon stay tuned ...<br>
 New suggestions have a warm welcome from our side
+  
 </h6>
 
-<h2 align="center"> Note From Dev. </h2>
-<p align="center">
-More screens and styles coming soon stay tuned ...
-  </p>
 
 
 ![Cover](https://user-images.githubusercontent.com/55774240/151201813-4c0426f2-af8c-439b-964f-1e4ce6d28d3d.png)
