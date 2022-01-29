@@ -49,7 +49,7 @@ dev_dependencies:
   # rules and activating additional ones.
   #flutter_lints: ^1.0.0
 flutter_native_splash:
-  color: "#ffffff"
+  background_image: "assets/images/bg.png"
   image: assets/images/splash_1000.png
   android: true
   ios: true

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:meditation_app/config/size_config.dart';
 import 'package:meditation_app/view/home_screen_view_model.dart';
 import 'cardButton.dart';
-import 'listItem.dart';
 
 class ContentCard extends StatelessWidget {
   final HomeScreenViewModel model;

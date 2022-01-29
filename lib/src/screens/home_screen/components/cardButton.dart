@@ -31,7 +31,7 @@ class CardButton extends StatelessWidget {
         // width: double.maxFinite,
         // height: double.maxFinite,
         decoration: BoxDecoration(
-          color: Color(0xFF3a3760),
+          color: Color(0xff2e2d2d),
           borderRadius: BorderRadius.circular(16),
         ),
         child: Center(

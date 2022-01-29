@@ -14,12 +14,13 @@ class Body extends StatelessWidget {
       decoration: BoxDecoration(
         color: Color(0xFF3a3760),
 
-        // gradient: LinearGradient(
-        //     begin: Alignment.centerLeft,
-        //     end: Alignment.centerRight,
-        //     colors: [
-        //       Color(0xFF6B6887),
-        //       Color(0xFF37355D),
+        gradient: LinearGradient(
+            begin: Alignment.centerLeft,
+            end: Alignment.centerRight,
+            colors: [
+              Color(0xFF6B6887),
+              Color(0xFF37355D),
+            ]),
         //for card
         //4f4d72 - top left
         //07070a -bottomright
