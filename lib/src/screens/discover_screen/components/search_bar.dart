@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:meditation_app/config/size_config.dart';
 
 Widget SearchBar() {
   return Container(
@@ -13,6 +14,9 @@ Widget SearchBar() {
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
+          SizedBox(
+            width: 10,
+          ),
           Icon(
             Icons.search_rounded,
             color: Color.fromRGBO(60, 60, 67, 0.6),
@@ -23,7 +27,7 @@ Widget SearchBar() {
             style: TextStyle(
                 color: Color.fromRGBO(60, 60, 67, 0.6),
                 fontFamily: 'SF Pro Text',
-                fontSize: 17,
+                fontSize: getProportionateScreenWidth(12),
                 letterSpacing: -0.4,
                 fontWeight: FontWeight.normal,
                 height: 1.3),

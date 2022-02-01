@@ -82,7 +82,11 @@ class Body extends StatelessWidget {
                   physics: NeverScrollableScrollPhysics(),
                   itemCount: model.listOfItems.length,
                   itemBuilder: (context, index) {
-                    return model.listOfItems[index];
+                    return DiscoverListItems(
+                      image: 'assets/images/calmr.png',
+                      tagline: 'Focus',
+                      baseline: 'Focus on  work',
+                    );
                   }),
             ),
           ),

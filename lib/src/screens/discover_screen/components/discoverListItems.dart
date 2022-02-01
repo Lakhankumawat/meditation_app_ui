@@ -18,14 +18,12 @@ class DiscoverListItems extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Expanded(
-          child: Container(
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(16),
-            ),
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(8.0),
             child: Image.asset(
               image,
-              fit: BoxFit.fitWidth,
-              height: getProportionateScreenHeight(200),
+              fit: BoxFit.fill,
+              height: getProportionateScreenHeight(210),
               width: getProportionateScreenWidth(200),
             ),
           ),

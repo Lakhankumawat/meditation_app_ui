@@ -82,10 +82,16 @@ class ListItem extends StatelessWidget {
         Row(
           children: [
             Expanded(
-              child: Image.asset(img1),
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Image.asset(img1),
+              ),
             ),
             Expanded(
-              child: Image.asset(img2),
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Image.asset(img2),
+              ),
             ),
           ],
         ),
