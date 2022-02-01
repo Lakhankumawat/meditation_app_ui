@@ -1,6 +1,6 @@
 
   
-# Ⓜ️EDIT8
+# MEDIT8
 
 ### 🧘‍♂️A meditation app built using flutter .
 
