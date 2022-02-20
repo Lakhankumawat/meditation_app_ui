@@ -48,22 +48,6 @@ Developed with ❤️ in India 🇮🇳
 </p>
   
   
-  <!-- 
 
-
-
-## 🙂Note from dev
-
-More screens and styles coming soon stay tuned ...<br>
-New suggestions have a warm welcome from our side
-
-## 😎Features 
-
-  Cool Eye Catching UI  <br>
-  GlassMorphism Style Enabled<br>
-  Device Resoultion Responsive<br>
-  Organised Code File Structure<br>
-  Beginner Friendly Code with Comments<br>
- -->
  
 
